@@ -142,8 +142,8 @@ namespace Greenshot.Base.Core
         public bool OutputFilePromptQuality { get; set; }
 
         [IniProperty("OutputFileIncrementingNumber", Description = "The number for the ${NUM} in the filename pattern, is increased automatically after each save.",
-            DefaultValue = "1")]
-        public uint OutputFileIncrementingNumber { get; set; }
+            DefaultValue = "01")]
+        public string OutputFileIncrementingNumber { get; set; }
 
         [IniProperty("OutputPrintPromptOptions", LanguageKey = "settings_alwaysshowprintoptionsdialog", Description = "Ask for print options when printing?",
             DefaultValue = "true")]

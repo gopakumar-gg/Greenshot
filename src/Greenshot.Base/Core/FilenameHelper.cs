@@ -420,14 +420,19 @@ namespace Greenshot.Base.Core
 
                         break;
                     case "NUM":
-                        CoreConfig.OutputFileIncrementingNumber++;
-                        IniConfig.Save();
-                        replaceValue = CoreConfig.OutputFileIncrementingNumber.ToString();
-                        if (padWidth == 0)
+                        string numStr = CoreConfig.OutputFileIncrementingNumber;
+                        if (captureDetails != null) // null when Settings dialog is invoked.
                         {
-                            padWidth = -6;
-                            padChar = '0';
+                            int totalWidth = numStr.Trim().Length;
+                            if (int.TryParse(numStr, out int number))
+                            {
+                                CoreConfig.OutputFileIncrementingNumber = (++number).ToString().PadLeft(totalWidth, '0');
+                                IniConfig.Save();
+                            }
+                            else
+                                MessageBox.Show("Invalid NUM format");
                         }
+                        return numStr;
 
                         break;
                     case "title":
