@@ -838,7 +838,7 @@ namespace Greenshot.Forms {
 			this.tab_output.BackColor = System.Drawing.Color.Transparent;
 			this.tab_output.Controls.Add(this.groupbox_preferredfilesettings);
 			this.tab_output.Controls.Add(this.groupbox_qualitysettings);
-            this.tab_output.Controls.Add(this.label_counter);
+			this.tab_output.Controls.Add(this.label_counter);
 			this.tab_output.Controls.Add(this.textbox_counter);
 			this.tab_output.LanguageKey = "settings_output";
 			this.tab_output.Location = new System.Drawing.Point(4, 22);
