@@ -799,7 +799,6 @@ namespace Greenshot.Forms
             checkbox_optimizeforrdp.Enabled = state;
             checkbox_thumbnailpreview.Enabled = state;
             textbox_footerpattern.Enabled = state;
-            textbox_counter.Enabled = state;
             checkbox_suppresssavedialogatclose.Enabled = state;
             checkbox_checkunstableupdates.Enabled = state;
             checkbox_minimizememoryfootprint.Enabled = state;

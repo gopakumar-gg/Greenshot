@@ -838,6 +838,8 @@ namespace Greenshot.Forms {
 			this.tab_output.BackColor = System.Drawing.Color.Transparent;
 			this.tab_output.Controls.Add(this.groupbox_preferredfilesettings);
 			this.tab_output.Controls.Add(this.groupbox_qualitysettings);
+			this.tab_output.Controls.Add(this.label_counter);
+			this.tab_output.Controls.Add(this.textbox_counter);
 			this.tab_output.LanguageKey = "settings_output";
 			this.tab_output.Location = new System.Drawing.Point(4, 22);
 			this.tab_output.Name = "tab_output";
@@ -1092,8 +1094,6 @@ namespace Greenshot.Forms {
 			this.groupbox_expert.Controls.Add(this.checkbox_minimizememoryfootprint);
 			this.groupbox_expert.Controls.Add(this.checkbox_checkunstableupdates);
 			this.groupbox_expert.Controls.Add(this.checkbox_suppresssavedialogatclose);
-			this.groupbox_expert.Controls.Add(this.label_counter);
-			this.groupbox_expert.Controls.Add(this.textbox_counter);
 			this.groupbox_expert.Controls.Add(this.label_footerpattern);
 			this.groupbox_expert.Controls.Add(this.textbox_footerpattern);
 			this.groupbox_expert.Controls.Add(this.checkbox_thumbnailpreview);
